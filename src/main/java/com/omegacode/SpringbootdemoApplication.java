@@ -12,7 +12,7 @@ public class SpringbootdemoApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SpringbootdemoApplication.class, args);
 		
-		System.out.println("Inspect the beans provided by Spring Boot:");
+		System.out.println("Beans provided by Spring Boot:");
 		 
         String[] beanNames = ctx.getBeanDefinitionNames();
         Arrays.sort(beanNames);

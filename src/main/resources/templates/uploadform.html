@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include ="_others :: head" />
+<body>
+
+	<header id="header" th:include ="_menus :: title-menu" />	
+	<nav id="nav" th:include ="_menus :: main-menu" />
+
+	<div th:if="${message}">
+		<h2 th:text="${message}" />
+	</div>
+
+	<div>
+		<form method="POST" enctype="multipart/form-data" action="/upload">
+			<table>
+				<tr>
+					<td>File to upload:</td>
+					<td><input type="file" name="file" /></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="name" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Upload" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div>
+		<ul>
+			<li th:each="file : ${files}" th:text="${file}"></li>
+		</ul>
+	</div>
+	
+	<div th:include ="_links :: security" />	
+	<footer id="footer" th:include ="_others :: footer" />
+	<th:block th:include ="_others :: scripts" />
+
+</body>
+</html>

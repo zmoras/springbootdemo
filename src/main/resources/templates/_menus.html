@@ -1,0 +1,16 @@
+<header th:fragment="title-menu">
+	<h1>
+		<a href="/">Szafbook</a>
+	</h1>
+	<a href="#nav">Menu</a>
+</header>
+
+<nav th:fragment="main-menu">
+	<ul class="links">
+		<li><a href="/">Home</a></li>
+		<li><a href="#">My Wardrobes</a></li>
+		<li><a href="#">Friends' Wardrobes</a></li>
+		<li><a href="#">Search</a></li>
+		<li><a href="#" onclick="document.getElementById('logout').submit()">Sign Out</a></li>
+	</ul>
+</nav>

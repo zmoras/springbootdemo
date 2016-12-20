@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author kma
  * 19.12.2016
  */
-@RestController
+//@RestController
 public class HelloController {
  
     @RequestMapping("/")

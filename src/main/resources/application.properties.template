@@ -1,0 +1,14 @@
+multipart.maxRequestSize=128KB
+multipart.maxRequestSize=128KB
+user.memory.username=xxx
+user.memory.password=xxx
+tomcat.keystore.password=xxx
+management.context-path=/actuator
+spring.profiles.active=development
+spring.mail.username=xxx
+spring.mail.password=xxx
+spring.mail.host=xxx
+spring.mail.port=xxx
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.auth=true

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="_others :: head" />
+<body>
+
+	<header id="header" th:include="_menus :: title-menu" />
+	<nav id="nav" th:include="_menus :: main-menu" />
+
+	<section id="main" class="wrapper">
+		<header class="major special">
+			<h2>Log In</h2>
+		</header>
+		<div class="container">
+			<div th:if="${param.error}">Invalid username and password.</div>
+			<form th:action="@{/login}" method="post">
+				<div>
+					<label> User Name : <input type="text" name="username" />
+					</label>
+				</div>
+				<div>
+					<label> Password: <input type="password" name="password" />
+					</label>
+				</div>
+				<div>
+					<input type="submit" value="Sign In" />
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer id="footer" th:include="_others :: footer" />
+	<th:block th:include="_others :: scripts" />
+</body>
+</html>

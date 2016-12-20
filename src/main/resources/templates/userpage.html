@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include ="_others :: head" />
+<body>
+
+	<header id="header" th:include="_menus :: title-menu" />	
+	<nav id="nav" th:include="_menus :: main-menu" />
+
+
+	<section id="main" class="wrapper">
+		<h1>
+			<span th:text="${currentUser.username} + ' Home'" th:remove="tag">&nbsp;</span>
+		</h1>
+	</section>
+	
+	<div th:include="_links :: security" />	
+	<footer id="footer" th:include ="_others :: footer" />
+	<th:block th:include="_others :: scripts" />
+</body>
+</html>

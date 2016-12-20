@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include ="_others :: head" />
+<body class="landing">
+
+	<header id="header" class="alt" th:include ="_menus :: title-menu" />	
+	<nav id="nav" th:include ="_menus :: main-menu" />
+
+	<!-- Banner -->
+	<section id="banner">
+		<i class="icon fa-wrench"></i>
+		<h2>Oops.</h2>
+		<p>Something went wrong.</p>		
+		<ul class="actions">
+			<li><a href="/" class="button big special">Start Again</a></li>
+		</ul>
+	</section>
+
+	<div th:include ="_links :: security" />	
+	<footer id="footer" th:include ="_others :: footer" />
+	<th:block th:include ="_others :: scripts" />
+
+</body>
+</html>

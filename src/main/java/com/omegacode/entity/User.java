@@ -35,7 +35,7 @@ public class User implements UserDetails {
 	@Size(min=2,max=30)
 	@Column(name = "login")
 	private String username;
-	
+//	displayed name
 	@Transient
 	private String displayedName;
 	@Email

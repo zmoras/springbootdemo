@@ -45,7 +45,7 @@ public class User implements UserDetails {
 	/** optional first screen attributes */
 //  fnamea2c
 	private String fname;
-//	lname2aa
+//	lname2aa6
 	private String lname;
 
 //

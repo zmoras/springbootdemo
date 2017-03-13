@@ -43,7 +43,7 @@ public class User implements UserDetails {
 	private String email;
 
 	/** optional first screen attributes */
-//  fnamea
+//  fnamea2
 	private String fname;
 //	lname2a
 	private String lname;

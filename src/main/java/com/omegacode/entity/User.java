@@ -38,6 +38,7 @@ public class User implements UserDetails {
 //	displayed name a 
 	@Transient
 	private String displayedName;
+//	email change_1
 	@Email
 	@NotNull
 	private String email;

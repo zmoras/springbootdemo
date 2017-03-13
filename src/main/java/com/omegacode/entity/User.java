@@ -35,7 +35,7 @@ public class User implements UserDetails {
 	@Size(min=2,max=30)
 	@Column(name = "login")
 	private String username;
-//	displayed name
+//	displayed name a 
 	@Transient
 	private String displayedName;
 	@Email
@@ -43,9 +43,9 @@ public class User implements UserDetails {
 	private String email;
 
 	/** optional first screen attributes */
-//  fnamea2c
+//  fnamea2c 444
 	private String fname;
-//	lname2aa6
+//	lname2aa6 4
 	private String lname;
 
 //

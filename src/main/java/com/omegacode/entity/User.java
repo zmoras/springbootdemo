@@ -43,8 +43,9 @@ public class User implements UserDetails {
 	private String email;
 
 	/** optional first screen attributes */
-
+//  fname
 	private String fname;
+//	lname
 	private String lname;
 
 //

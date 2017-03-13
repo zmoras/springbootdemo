@@ -1,8 +1,6 @@
 package com.omegacode.entity;
 
 import java.math.BigInteger;
-import java.net.URI;
-import java.util.List;
 
 import javax.persistence.Entity;
 

@@ -39,14 +39,13 @@ public class User implements UserDetails {
 	@Transient
 	private String displayedName;
 	@Email
-	@NotNull	
+	@NotNull
 	private String email;
 
 	/** optional first screen attributes */
 
 	private String fname;
 	private String lname;
-	private String password;
 
 //
 //	/** lifecycle and customization attributes */
@@ -114,13 +113,6 @@ public class User implements UserDetails {
      */
     public void setConfirmationId(String confirmationId) {
         this.confirmationId = confirmationId;
-    }
-
-    /**
-     * @param password the password to set
-     */
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public BigInteger getId() {
